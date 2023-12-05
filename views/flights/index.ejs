@@ -13,19 +13,15 @@
     <tbody>
       <% flights.forEach(function(f) { %>
         <tr>
-          <td><%= f.title %></td>
-          <!-- <td><%= m.releaseYear %></td> -->
-          <td><a href="/flights/<%= f._id %>">DETAILS</a></td>
+          <td><%= f.airline %></td>
+          <td><%= f.airport %></td>
+          <!-- <td><a href="/flights/<%= f._id %>">DETAILS</a></td> -->
+          <td><a href="/flights/<%= f._id %>"><%= f.flightNo %></a></td>
+          <!-- <td><%= f.departs %></td>        -->
         </tr>
         <% }); %>
       </tbody>
     </table>
-    
-
-
-
-
-
 
 
 
